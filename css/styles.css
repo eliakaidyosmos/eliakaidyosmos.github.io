@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+/* sm */
+@media screen and (min-width: 576px) {}
+/* md */
+@media screen and (min-width: 768px) {}
+/* lg */
+@media screen and (min-width: 992px) {}
+/* xl */
+@media screen and (min-width: 1200px) {}
+
 /****** Reset ******/
 .row, .container-fluid {
   margin-left: 0px!important;
@@ -94,26 +103,29 @@ body {
     height: 500px;
 }
 
-/* sm */
-@media screen and (min-width: 576px) {
-
-}
 /* md */
 @media screen and (min-width: 768px) {
     .carousel-item {
         height: 100vh;
     }
 }
-/* lg */
-@media screen and (min-width: 992px) {
-
-}
-/* xl */
-@media screen and (min-width: 1200px) {
-
-}
 /****** Slider ******/
 
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+}
+
+/* sm */
+@media screen and (min-width: 576px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
 
 /****** Menu ******/
 .menu-container {
@@ -122,12 +134,12 @@ body {
     color: rgba(255, 255, 255, .9);
 }
 
-.menu-container h1{
+/* .menu-container h1{
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
     margin-bottom: 1.3rem;
-}
+} */
 
 .menu-category {
     margin-bottom: 1.2rem;
@@ -148,7 +160,7 @@ body {
 }
 
 .menu-cat-item {
-    margin: 0;
+    margin: .3rem 0;
     padding: 0px;
 }
 
@@ -161,7 +173,7 @@ body {
 .menu-item-desc {
     font-size: 1rem;
     opacity: .9;
-    padding: 0px;
+    padding: 0rem;
     padding-bottom: .3rem;
 }
 
@@ -178,7 +190,7 @@ body {
     text-align: center;
     margin-top: .5rem;
     padding: 0px;
-    padding: 0 4.2rem;
+    padding: 0 .5rem;
     text-decoration: underline;
 }
 
@@ -225,14 +237,14 @@ body {
     text-align: center;
 }
 
-/* sm */
-@media screen and (min-width: 576px) {
-
-}
 /* md */
 @media screen and (min-width: 768px) {
     .menu-cat-item {
         margin: .3rem 0;
+    }
+
+    .menu-cat-note {
+        padding: 0 3rem;
     }
 }
 
@@ -242,13 +254,9 @@ body {
         margin-bottom: 0;
     }
 
-    /* .menu-imgs {
-        display: block;
-    } */
-}
-/* xl */
-@media screen and (min-width: 1200px) {
-
+    .menu-cat-note {
+        padding: 0 4.2rem;
+    }
 }
 /****** Menu ******/
 
@@ -256,13 +264,6 @@ body {
 /****** Contact ******/
 .contact-container {
     padding-top: 3rem;
-}
-
-.contact-container h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    margin-bottom: 1.3rem;
 }
 
 .contact-info {
