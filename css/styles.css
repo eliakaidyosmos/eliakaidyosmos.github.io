@@ -57,8 +57,9 @@ body {
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: .1rem;
-    background-color: rgba(0, 95, 115, .7) !important;
-    height: 6rem;
+    background-color: rgba(0, 95, 115, .8) !important;
+    height: auto;
+    padding: 1.5rem .9rem;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -85,15 +86,9 @@ body {
 }
 
 .navbar.scrolled {
-  /* background-color: rgba(93, 67, 44, .9) !important; */
-  background-color: rgba(0, 95, 115, .9) !important;
-  height: auto;
+  background-color: rgba(0, 95, 115, 1) !important;
   font-size: .9rem;
-  /* -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease; */
+  padding: .5rem .9rem;
 }
 /****** Navbar ******/
 
